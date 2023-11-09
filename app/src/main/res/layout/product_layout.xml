@@ -1,0 +1,53 @@
+<!-- res/layout/product_details.xml -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Product Image (if applicable) -->
+    <ImageView
+        android:id="@+id/imageViewProduct"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@color/blue"
+        android:scaleType="centerCrop"/>
+
+    <!-- Product Name -->
+    <TextView
+        android:id="@+id/textViewProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewProduct"
+        android:layout_marginTop="16dp"
+        android:text="Product Name"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <!-- Product Description -->
+    <TextView
+        android:id="@+id/textViewProductDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewProductName"
+        android:layout_marginTop="8dp"
+        android:text="Product Description"/>
+
+    <!-- Product Price -->
+    <TextView
+        android:id="@+id/textViewProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewProductDescription"
+        android:layout_marginTop="8dp"
+        android:text="Price: $19.99"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <!-- Add more details as needed (e.g., quantity, rating, etc.) -->
+
+    <!-- Add buttons or other interactive elements as needed -->
+
+</RelativeLayout>
